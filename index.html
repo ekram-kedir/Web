@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <title>Profile Card</title>
+        <style>
+            .pfl{
+                height:100%;
+                width:100%;
+                max-height:800px;
+                max-width: 1200px;
+                min-height:600px;
+                min-width:1000px;
+                display:flex;
+                justify-content: space-round;
+                align-items:center;
+                margin:0 auto;
+            }
+            .brd{
+                height:369px;
+                width:310px;
+                background:transparent;
+                border-radius:10px;
+                transition:border ls;
+                position:relative;
+            }
+            .brd:hover{
+                border:1px solid rgb(192, 229, 226);
+                width:370px;
+            }
+            .crd{
+                height:379px;
+                width:380px;
+                background: #808088;
+                border-radius:10px;
+                /* transition:0.8s; */
+                overflow:hidden;
+                background:#000;
+                box-shadow:0 70px 63px -60px #000;
+                display:flex;
+                justify-content:center;
+                align-items: center;
+                position:relative;
+            }
+            .crdd{
+                background:url(imagee.jpg) center center no-repeat;
+                background-size: 400px;
+            }
+            .crdd:hover{
+                background:url(imagee.jpg) left center no-repeat;
+                background-size: 600px;
+            }
+            .crdd:hover h2{
+                opacity:1;
+            }
+            .crdd:hover .fa{
+                opacity:1;
+            }
+            h2{
+                font-family: "serif";
+                color: #fff;
+                margin: 20px;
+                opacity:0;
+                transition: opacity 1s;
+            }
+            .fa{
+                opacity:0;
+                transition:opacity 1s;
+            }
+            .icon{
+                position:absolute;
+                fill:rgb(14, 15, 15);
+                color:rgb(14, 15, 15);
+                height:100px;
+                top:0px;
+                width:20px;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="pfl">
+            <div class="crd crdd">
+                <div class="brd">
+                <h2>Software Engineer Ekram!</h2>
+                <div class="icon">
+                    <i class="fa fa-codeopen" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-telegram" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
